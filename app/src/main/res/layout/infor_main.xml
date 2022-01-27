@@ -5,13 +5,11 @@
     android:id="@+id/panelfaculty"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#EED5F4"
     android:orientation="vertical"
     android:padding="@dimen/cardview_default_radius">
 
-
-
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center_horizontal"
@@ -21,17 +19,21 @@
             android:id="@+id/facultylogo"
             android:layout_width="150dp"
             android:layout_height="101dp"
-            android:scaleType="centerCrop"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="29dp"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"
             tools:src="@drawable/ic_baseline_image_24" />
 
         <TextView
             android:id="@+id/facultyName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:gravity="center"
-            android:padding="5sp"
             android:text="FACULTAD DE CIENCIAS DE LA INGENIERÍA"
+            android:textAlignment="center"
+            android:textAllCaps="true"
             android:textAppearance="@style/TextAppearance.AppCompat.Display3"
             android:textColor="@color/design_default_color_primary_dark"
             android:textSize="14sp"
@@ -39,34 +41,42 @@
 
         <TextView
             android:id="@+id/facultyDecano"
-            android:layout_width="wrap_content"
+            android:layout_width="233dp"
             android:layout_height="wrap_content"
-            android:paddingVertical="9sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="2dp"
             android:text="Decano: Chiriboga Casanova Washington"
             android:textAlignment="center"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/facultyemail"
-            android:layout_width="match_parent"
+            android:layout_width="183dp"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="31dp"
             android:padding="3dip"
             android:text="fcip@uteq.edu.ec"
             android:textAlignment="center"
+            android:textAllCaps="true"
             android:textColor="#2196F3"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:textStyle="italic" />
 
         <TextView
             android:id="@+id/facultyLocation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="15dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="137dp"
+            android:layout_marginEnd="0dp"
             android:text="Campus 'Ingeniero Manuel Agustín Haz Álvarez', Av. Quito km. 1 1/2 vía a Santo Domingo de los Tsáchilas"
             android:textAlignment="center"
-            android:textSize="10sp" />
+            android:textColor="#0E0D0D"
+            android:textSize="12sp" />
 
 
-    </LinearLayout>
+    </RelativeLayout>
 </LinearLayout>

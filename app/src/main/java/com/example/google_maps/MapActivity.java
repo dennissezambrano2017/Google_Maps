@@ -21,13 +21,13 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.bumptech.glide.Glide;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.squareup.picasso.Picasso;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -101,9 +101,8 @@ public class MapActivity extends MainActivity implements OnMapReadyCallback,
         flocat.setText(tmp.getDirection());
         url=tmp.getLogo();
 
-        Glide.with(context)
+        Picasso.with(context)
                 .load(url)
-                .placeholder(R.drawable.ic_baseline_image_24)
                 .into(flogo);
 
         return infoView;
